@@ -4406,6 +4406,20 @@ The influence on the performance of the parareal algorithm, of the choice of the
 	year = {2019},
 }
 
+@article{ZHAO201999,
+title = "A limited-memory block bi-diagonal Toeplitz preconditioner for block lower triangular Toeplitz system from time–space fractional diffusion equation",
+journal = "Journal of Computational and Applied Mathematics",
+volume = "362",
+pages = "99--115",
+year = "2019",
+issn = "0377-0427",
+doi = "https://doi.org/10.1016/j.cam.2019.05.019",
+url = "http://www.sciencedirect.com/science/article/pii/S0377042719302547",
+author = "Yong-Liang Zhao and Pei-Yong Zhu and Xian-Ming Gu and Xi-Le Zhao and Jianxiong Cao",
+keywords = "Block triangular lower Toeplitz matrix, Skew-circulant preconditioner, Krylov subspace methods, Fractional differential equations, WSGD, - formula",
+abstract = "A block lower triangular Toeplitz system arising from the time–space fractional diffusion equation is discussed. For efficient solutions of such the linear system, the preconditioned biconjugate gradient stabilized method and the flexible general minimal residual method are exploited. The main contribution of this paper has two aspects: (i) A block bi-diagonal Toeplitz preconditioner is developed for the block lower triangular Toeplitz system, whose storage is of O(N) with N being the spatial grid number; (ii) A new skew-circulant preconditioner is designed to accelerate the inverse of the block bi-diagonal Toeplitz preconditioner multiplying a vector. Numerical experiments are given to demonstrate the effectiveness of our two proposed preconditioners."
+}
+
 @article{AgbohEtAl2020,
 	abstract = {A key component of many robotics model-based planning and control algorithms is physics predictions, that is, forecasting a sequence of states given an initial state and a sequence of controls. This process is slow and a major computational bottleneck for robotics planning algorithms. Parallel-in-time integration methods can help to leverage parallel computing to accelerate physics predictions and thus planning. The Parareal algorithm iterates between a coarse serial integrator and a fine parallel integrator. A key challenge is to devise a coarse level model that is computationally cheap but accurate enough for Parareal to converge quickly. Here, we investigate the use of a deep neural network physics model as a coarse model for Parareal in the context of robotic manipulation. In simulated experiments using the physics engine Mujoco as fine propagator we show that the learned coarse model leads to faster Parareal convergence than a coarse physics-based model. We further show that the learned coarse model allows to apply Parareal to scenarios with multiple objects, where the physics-based coarse model is not applicable. Finally, We conduct experiments on a real robot and show that Parareal predictions are close to real-world physics predictions for robotic pushing of multiple objects. Some real robot manipulation plans using Parareal can be found at https://www.youtube.com/watch?v=wCh2o1rf-gA .},
 	author = {Wisdom Agboh and Oliver Grainger and Daniel Ruprecht and Mehmet Dogar},
@@ -4690,6 +4704,35 @@ the effectiveness of the proposed method.},
 	title = {Preconditioners for all-at-once system from the fractional mobile/immobile advection{\textendash}diffusion model},
 	url = {https://doi.org/10.1007%2Fs12190-020-01410-y},
 	year = {2020},
+}
+
+@article{Zhao2020x,
+title = "A preconditioning technique for all-at-once system from the nonlinear tempered fractional diffusion equation",
+journal = "Journal of Scientific Computing",
+volume = "83",
+number = "1",
+pages = "10",
+year = "2020",
+issn = "0885-7474",
+doi = "https://doi.org/10.1007/s10915-020-01193-1",
+url = "https://link.springer.com/article/10.1007/s10915-020-01193-1",
+author = "Yong-Liang Zhao and Pei-Yong Zhu and Xian-Ming Gu and Xi-Le Zhao and Huan-Yan Jian ",
+keywords = "Nonlinear tempered fractional diffusion equation, All-at-once system, Newton’s method, Krylov subspace method, Toeplitz matrix, Banded Toeplitz preconditioner",
+abstract = "An all-at-once system of nonlinear algebra equations arising from the nonlinear tempered fractional diffusion equation with variable coefficients is studied. Firstly, both the nonlinear and linearized implicit difference schemes are proposed to approximate such the nonlinear equation with continuous/discontinuous coefficients. The stabilities and convergences of the two numerical schemes are proved under several assumptions. Numerical examples show that the convergence orders of these two schemes are 1 in both time and space. Secondly, the nonlinear all-at-once system is derived from the nonlinear implicit scheme. Newton’s method, whose initial value is obtained by interpolating the solution of the linearized implicit scheme on the coarse space, is chosen to solve such a nonlinear all-at-once system. To accelerate the speed of solving the Jacobian equations appeared in Newton’s method, a robust preconditioner is developed and analyzed. Numerical examples are reported to illustrate the effectiveness of our proposed preconditioner. Meanwhile, they also imply that our chosen initial guess for Newton’s method is feasible."
+}
+
+@article{GU2020109576,
+title = "A parallel-in-time iterative algorithm for Volterra partial integro-differential problems with weakly singular kernel",
+journal = "Journal of Computational Physics",
+volume = "417",
+pages = "109576",
+year = "2020",
+issn = "0021-9991",
+doi = "https://doi.org/10.1016/j.jcp.2020.109576",
+url = "http://www.sciencedirect.com/science/article/pii/S0021999120303508",
+author = "Xian-Ming Gu and Shu-Lin Wu",
+keywords = "Volterra partial integro-differential problems, Singular kernel, Parallel-in-time (PinT) algorithms, Diagonalization technique, Convolution quadratures, Convergence analysis",
+abstract = "Volterra partial integro-differential problems with weakly singular kernel attract a lot of attentions in recent years, thanks to the numerous real world applications. Solving this kind of PDEs in a parallel-in-time (PinT) pattern is difficult, because of the nonlocal property of time evolution. In this paper, we consider a class of representative problems and propose a novel iterative algorithm for PinT computation. In each iteration, we can solve the PDEs for all the discrete time points simultaneously via the diagonalization technique proposed recently. Convergence of the algorithm is analyzed by looking insight into the decreasing property of the convolution quadrature weights. We show that the convergence rate of the proposed algorithm is robust with respect to the discretization and problem parameters. Numerical results are reported to support our findings."
 }
 
 @unpublished{ZhaoEtAl2020b,
